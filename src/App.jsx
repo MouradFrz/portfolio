@@ -12,32 +12,33 @@ function App() {
 		}, 4000);
 	}, []);
 	return (
-		<div>
-			<AnimatePresence>
-				{showContent && (
-					<motion.div
-						animate={{ opacity: 1 }}
-						initial={{ opacity: 0 }}
-						exit={{ opacity: 0 }}
-						transition={{ duration: 2 }}
-					>
-						{myRoutes}
-					</motion.div>
-				)}
-			</AnimatePresence>
-			<AnimatePresence>
-			{!showContent && (
-				<motion.div
-					animate={{ opacity: 1 }}
-					initial={{ opacity: 0 }}
-					exit={{ opacity: 0 }}
-					transition={{ duration: 2 }}
-				>
-					<AppLoading />
-				</motion.div>
-			)}
-			</AnimatePresence>
-		</div>
+		// <div>
+		// 	<AnimatePresence>
+		// 		{showContent && (
+		// 			<motion.div
+		// 				animate={{ opacity: 1 }}
+		// 				initial={{ opacity: 0 }}
+		// 				exit={{ opacity: 0 }}
+		// 				transition={{ duration: 2 }}
+		// 			>
+		// 				{myRoutes}
+		// 			</motion.div>
+		// 		)}
+		// 	</AnimatePresence>
+		// 	<AnimatePresence>
+		// 	{!showContent && (
+		// 		<motion.div
+		// 			animate={{ opacity: 1 }}
+		// 			initial={{ opacity: 0 }}
+		// 			exit={{ opacity: 0 }}
+		// 			transition={{ duration: 2 }}
+		// 		>
+		// 			<AppLoading />
+		// 		</motion.div>
+		// 	)}
+		// 	</AnimatePresence>
+		// </div>
+		<div>{myRoutes}</div>
 	);
 }
 
