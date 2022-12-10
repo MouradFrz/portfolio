@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .outline-button {
+    @apply py-2 px-4 bg-transparent transition-all top-0 left-0 duration-200 hover:bg-accent hover:top-[2px] hover:left-[2px] relative border-2 rounded-sm font-semibold border-secondary;
+    font-family: 'Gantari', sans-serif;
+  }
+  .sec-font{
+    font-family: 'Major Mono Display', monospace;
+  }
+  .active{
+    @apply text-secondary font-bold;
+  }
+  .custom-container{
+    @apply w-[88%] max-w-[1200px] mx-auto; 
+  }
+  .gradient-bg{
+    background:linear-gradient(to top,rgb(170 242 150),transparent 50%)
+  }
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Gantari', sans-serif;
+}
+button {
+  border-radius: 3px;
+  border: 2px solid #aaf296;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+}
+button:hover {
+  background-color: #aaf29690;
+  color: black;
+}
+body{
+  overflow-x: hidden;
+  background-color: #18003d;
+}
