@@ -19,7 +19,7 @@ function Hero(props) {
 		},
 	};
 	return (
-		<div className="mb-40 flex gap-5 flex-col lg:flex-row-reverse lg:mt-40">
+		<div className="mb-40  flex gap-5 flex-col lg:flex-row-reverse lg:mt-40">
 			<div className="flex items-center lg:w-[50%]">
 				<motion.div
 					className="w-[100%] text-[0.7rem] my-2 lg:my-0"
@@ -47,7 +47,7 @@ function Hero(props) {
 					</motion.pre>
 				</motion.div>
 			</div>
-			<div className="lg:w-[50%]">
+			<div className="lg:w-[50%] mt-40 md:mt-0">
 				<p className="sec-font text-sm text-secondary mb-2">Hi, I am</p>
 				<h2 className="text-[5.2rem] leading-[80px] font-bold tracking-wide">
 					Mourad Yaou.
