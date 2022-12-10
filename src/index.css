@@ -47,3 +47,22 @@ body{
   overflow-x: hidden;
   background-color: #18003d;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #27035d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaf296; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaf296cc; 
+}
