@@ -1,8 +1,8 @@
 import React from "react";
 import {AiOutlineLinkedin} from 'react-icons/ai'
 import {FiGithub} from 'react-icons/fi'
-import {AiOutlineInstagram} from 'react-icons/Ai'
-import {AiOutlineFacebook} from 'react-icons/Ai'
+import {AiOutlineInstagram} from 'react-icons/ai'
+import {AiOutlineFacebook} from 'react-icons/ai'
 function LeftSideBar(props) {
 	return (
 		<div className="z-[-10] md:block hidden">
