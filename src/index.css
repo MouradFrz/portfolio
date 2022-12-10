@@ -16,7 +16,7 @@
     @apply text-secondary font-bold;
   }
   .custom-container{
-    @apply w-[88%] max-w-[1200px] mx-auto; 
+    @apply md:w-[88%] max-w-[1200px] mx-auto w-[95%]; 
   }
   .gradient-bg{
     background:linear-gradient(to top,rgb(170 242 150),transparent 50%)
