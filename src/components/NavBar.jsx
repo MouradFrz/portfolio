@@ -11,11 +11,11 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 					onClick={() => {
 						setSideBarOn((prev) => !prev);
 					}}
-					className="  mr-4 md:mr-0 text-2xl cursor-pointer hover:text-secondary  transition-all duration-75 md:hidden"
+					className="mr-4 md:mr-0 text-2xl cursor-pointer hover:text-secondary  transition-all duration-75 md:hidden"
 				/>
 
-			<ul className="md:flex hidden gap-10  justify-end">
-				<li>
+			<ul className="md:flex hidden gap-10 justify-end group">
+				<li className="group-hover:text-secondary hover:text-blue-200" >
 					<NavLink to="#contact">
 						{" "}
 						<span className="sec-font">H</span>ome
