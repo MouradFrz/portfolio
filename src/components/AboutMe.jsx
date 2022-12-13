@@ -20,7 +20,7 @@ function AboutMe(props) {
 		};
 	}, []);
 	return (
-		<div className="mb-40">
+		<div className="mb-20">
 			<h2 className="font-semibold text-[3rem]">About me</h2>
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
 			<div className="flex flex-col md:flex-row">

@@ -7,7 +7,7 @@
 
 @layer components {
   .outline-button {
-    @apply py-2 px-4 bg-transparent transition-all top-0 left-0 duration-200 hover:bg-accent hover:top-[2px] hover:left-[2px] relative border-2 rounded-sm font-semibold border-secondary;
+    @apply py-2 px-4 bg-transparent transition-all top-0 left-0 duration-100 hover:bg-accent hover:top-[-1px] hover:left-[2px] relative border-2 rounded-sm font-semibold border-secondary;
     font-family: 'Gantari', sans-serif;
   }
   .sec-font{
@@ -28,22 +28,6 @@
   box-sizing: border-box;
   padding: 0;
   font-family: 'Gantari', sans-serif;
-}
-button {
-  border-radius: 3px;
-  border: 2px solid #aaf296;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: rgba(255, 255, 255, 0);
-  cursor: pointer;
-  transition: background-color 0.1s;
-
-}
-button:hover {
-  background-color: #aaf29690;
-  color: black;
 }
 body{
   overflow-x: hidden;
