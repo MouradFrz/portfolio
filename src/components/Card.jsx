@@ -9,7 +9,6 @@ function Card({title,description,id}) {
 		hidden: { opacity: 0 },
 		show: { opacity: 1 },
 	};
-    console.log(description)
 	return (
 		<motion.div
 			variants={item}

@@ -22,8 +22,8 @@ function Work(props) {
 	if (isLoading) return "loading";
 	if (error) return "something went wrong";
 	return (
-		<div className="mb-40 flex flex-col items-center">
-			<h2 className="font-semibold text-[3rem] align-baseline w-full">My work</h2>
+		<div className="mb-20 flex flex-col items-center">
+			<h2 className="font-semibold text-[3rem] align-baseline w-full">Projects</h2>
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
 			<motion.div
 				className="flex gap-4 flex-wrap justify-center transition-all"
@@ -31,8 +31,8 @@ function Work(props) {
 				initial="hidden"
 				animate="show"
 			>
-				{data.slice(0,showedProjects).map((el) => (
-					<Card title={el.title} description={el.body[0].children[0].text} id={el._id}/>
+				{data.slice(0,showedProjects).map((el,i) => (
+					<Card key={i} title={el.title} description={el.body[0].children[0].text} id={el._id}/>
 				))}
 
 			</motion.div>

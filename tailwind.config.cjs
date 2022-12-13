@@ -8,6 +8,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      },
       colors:{
         primary:"#18003d",
         secondary:"#aaf296",
