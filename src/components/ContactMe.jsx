@@ -12,12 +12,13 @@ function ContactMe(props) {
                 Fill out the form below to let me know about what's on your mind!
 			</p>
 			<div className="mx-auto w-[98%] max-w-[800px] mb-20">
-				<form action="" className="flex flex-col items-center w-full">
+				<form action="https://formsubmit.co/mouradyaou2001@gmail.com" method="POST" className="flex flex-col items-center w-full">
 					<label htmlFor="" className="w-full">
 						Full name  <span className="text-red-400">*</span>
 					</label>
 					<input
 						type="text"
+                        name="name"
 						className="p-2 mb-3 w-full outline-none bg-white text-black text-xl rounded-sm"
                         required
 					/>
@@ -27,13 +28,14 @@ function ContactMe(props) {
 					<input
 						type="email"
 						className="p-2 mb-3 w-full outline-none bg-white text-black text-xl rounded-sm"
+                        name="email"
                         required
 					/>
 					<label htmlFor="" className="w-full">
 						Message  <span className="text-red-400">*</span>
 					</label>
 					<textarea
-						name=""
+						name="message"
 						id=""
 						cols="30"
 						rows="10"
@@ -41,6 +43,9 @@ function ContactMe(props) {
                         required
 					></textarea>
 					<button className="outline-button w-fit mt-4">Submit</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5173/success"></input>
+                    <input type="text" name="_honey" style={{ display:"none" }}></input>
+                    <input type="hidden" name="_captcha" value="false"></input>
 				</form>
 			</div>
 		</div>

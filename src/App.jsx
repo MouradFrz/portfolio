@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { useRoutes } from "react-router-dom";
+import { useRoutes, useLocation } from "react-router-dom";
 import { routes } from "./routes/routes";
 import AppLoading from "./components/AppLoading";
 import { motion, AnimatePresence } from "framer-motion";
 function App() {
-	const [showContent, setShowContent] = useState(false);
+	const nav = useLocation();
+	console.log()
+	const [showContent, setShowContent] = useState(()=>nav.pathname!=='/');
 	const myRoutes = useRoutes(routes);
 	useEffect(() => {
 		setTimeout(() => {
@@ -26,16 +28,16 @@ function App() {
 				)}
 			</AnimatePresence>
 			<AnimatePresence>
-			{!showContent && (
-				<motion.div
-					animate={{ opacity: 1 }}
-					initial={{ opacity: 0 }}
-					exit={{ opacity: 0 }}
-					transition={{ duration: 2 }}
-				>
-					<AppLoading />
-				</motion.div>
-			)}
+				{!showContent && (
+					<motion.div
+						animate={{ opacity: 1 }}
+						initial={{ opacity: 0 }}
+						exit={{ opacity: 0 }}
+						transition={{ duration: 2 }}
+					>
+						<AppLoading />
+					</motion.div>
+				)}
 			</AnimatePresence>
 		</div>
 	);
