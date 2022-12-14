@@ -43,7 +43,7 @@ function ContactMe(props) {
                         required
 					></textarea>
 					<button className="outline-button w-fit mt-4">Submit</button>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5173/success"></input>
+                    <input type="hidden" name="_next" value="https://mourad-yaou.netlify.app/success"></input>
                     <input type="text" name="_honey" style={{ display:"none" }}></input>
                     <input type="hidden" name="_captcha" value="false"></input>
 				</form>
