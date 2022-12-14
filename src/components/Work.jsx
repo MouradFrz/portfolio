@@ -18,11 +18,10 @@ function Work(props) {
 	};
 
 	const { data, isLoading, error } = useFetch('*[_type=="project"]');
-	if (data) console.log(data);
 	if (isLoading) return "loading";
 	if (error) return "something went wrong";
 	return (
-		<div className="mb-20 flex flex-col items-center">
+		<div className="mb-10 flex flex-col items-center">
 			<h2 className="font-semibold text-[3rem] align-baseline w-full">Projects</h2>
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
 			<motion.div

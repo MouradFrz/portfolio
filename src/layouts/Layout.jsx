@@ -16,6 +16,9 @@ function Layout(props) {
 				<div className="relative">
 					<Outlet/>
 				</div>
+				<footer className="text-center mb-5">
+					Designed and Developed by <a href="" className="font-bold text-secondary">Mourad Yaou</a>
+				</footer>
 			</div>
 		</div>
 	);

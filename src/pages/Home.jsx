@@ -5,6 +5,7 @@ import Work from '../components/Work';
 import {client} from '../api/SanityConfig'
 import {useFetch} from '../hooks/useFetch'
 import Skills from '../components/Skills';
+import ContactMe from '../components/ContactMe';
 function Home(props) {
 
     return (
@@ -13,6 +14,7 @@ function Home(props) {
             <AboutMe/>
             <Work/>
             <Skills/>
+            <ContactMe/>
         </div>
     );
 }
