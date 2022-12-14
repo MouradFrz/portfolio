@@ -12,7 +12,7 @@ function ContactMe(props) {
                 Fill out the form below to let me know about what's on your mind!
 			</p>
 			<div className="mx-auto w-[98%] max-w-[800px] mb-20">
-				<form action="https://formsubmit.co/mouradyaou2001@gmail.com" method="POST" className="flex flex-col items-center w-full">
+				<form action="https://formsubmit.co/131bcb38bf49fa4a07fc08d98a8eee3c" method="POST" className="flex flex-col items-center w-full">
 					<label htmlFor="" className="w-full">
 						Full name  <span className="text-red-400">*</span>
 					</label>
