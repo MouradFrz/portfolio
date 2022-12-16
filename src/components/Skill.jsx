@@ -1,3 +1,4 @@
+import parse from "html-react-parser";
 import React from "react";
 
 function Skill({ title, description, img }) {
@@ -19,7 +20,7 @@ function Skill({ title, description, img }) {
                 origin-top
                 group-hover:scale-y-100 md:w-[400px] w-full z-40 mt-2 absolute left-[50%] bg-black "
 			>
-				{description}
+				{description && parse(description)}
 			</p>
 		</div>
 	);
