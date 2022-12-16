@@ -14,24 +14,24 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 					className="mr-4 md:mr-0 text-2xl cursor-pointer hover:text-secondary  transition-all duration-75 md:hidden"
 				/>
 
-			<ul className="md:flex hidden gap-10 justify-end group">
-				<li className="group-hover:text-secondary hover:text-blue-200" >
+			<ul className="md:flex hidden gap-10 justify-end">
+				<li className="hover:text-secondary" >
 					<NavLink to="#contact">
 						{" "}
 						<span className="sec-font">H</span>ome
 					</NavLink>
 				</li>
-				<li>
+				<li className="hover:text-secondary">
 					<NavLink to="#contact">
 						<span className="sec-font">W</span>ork
 					</NavLink>
 				</li>
-				<li>
+				<li className="hover:text-secondary">
 					<NavLink to="#contact">
 						<span className="sec-font">A</span>bout me
 					</NavLink>
 				</li>
-				<li>
+				<li className="hover:text-secondary">
 					<NavLink to="#contact">
 						<span className="sec-font">C</span>ontact
 					</NavLink>
