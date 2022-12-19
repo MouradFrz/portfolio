@@ -63,7 +63,7 @@ function SidebarMobile({ sidebarOn, setSideBarOn }) {
 						onClick={() => {
 							setSideBarOn((prev) => !prev);
 						}}
-						className="text-2xl cursor-pointer hover:text-secondary absolute top-8 right-9 transition-all duration-75 md:hidden"
+						className="text-[2.5rem] p-1 cursor-pointer hover:text-secondary absolute top-6 right-4 transition-all duration-75 md:hidden"
 					/>
 				</motion.div>
 			)}
