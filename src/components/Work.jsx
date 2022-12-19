@@ -19,7 +19,6 @@ function Work(props) {
 	const { data, isLoading, error } = useFetch(
 		'*[_type=="project"]{_id,title,body,shortened,technologies}'
 	);
-	data && console.log(data);
 	if (isLoading) return "loading";
 	if (error) return "something went wrong";
 	return (

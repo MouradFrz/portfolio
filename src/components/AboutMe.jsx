@@ -5,20 +5,20 @@ function randomQuote(){
     return quotes[Math.floor(Math.random()*quotes.length)]
 }
 function AboutMe(props) {
-	const [showMessage, setShowMessage] = useState(true);
+	const [showMessage, setShowMessage] = useState(false);
     const [message, setMessage] = useState(randomQuote);
-	useEffect(() => {
-		const inter = setInterval(() => {
-			setShowMessage((prev) => false);
-            setTimeout(()=>{
-                setMessage(randomQuote)
-                setShowMessage((prev) => true);
-            },1200)
-		}, 5000);
-		return () => {
-			clearTimeout(inter);
-		};
-	}, []);
+	// useEffect(() => {
+	// 	const inter = setInterval(() => {
+	// 		setShowMessage((prev) => false);
+    //         setTimeout(()=>{
+    //             setMessage(randomQuote)
+    //             setShowMessage((prev) => true);
+    //         },1200)
+	// 	}, 5000);
+	// 	return () => {
+	// 		clearTimeout(inter);
+	// 	};
+	// }, []);
 	return (
 		<div className="mb-10">
 			<h2 className="font-semibold text-[3rem]">About me</h2>
