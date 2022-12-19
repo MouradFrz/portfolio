@@ -12,7 +12,7 @@ function Card({title,description,id,mainTech}) {
 	return (
 		<motion.div
 			variants={item}
-			className="flex flex-col w-full hover:scale-[1.05] transition-all  p-4 md:min-w-[340px] duration-75 md:w-[340px] w-full  bg-gradient-to-br from-accent to-secondary/5 rounded-sm"
+			className="flex flex-col hover:scale-[1.02] transition-all  p-4 md:min-w-[328px] duration-75 md:w-[328px] w-full  bg-gradient-to-br from-accent to-secondary/5 rounded-sm"
 		>
 			<h2 className="text-[2rem] font-bold">{title}</h2>
 			{description && <p>{parse(description)}</p>}

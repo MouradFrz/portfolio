@@ -1,6 +1,8 @@
 export default [
-    "I am all about hardwork and dedication",
-    "I am 1,78 meters tall!",
-    "I do not like pineapple on pizza :D",
-    "I beleive Jordan 3s are the best sneakers on earth",
+    "I am all about hardwork and dedication.",
+    "I have always been passionate about Computer Science.",
+    "I am quite a fast learner, especially when I am intrested in the topic.",
+    "I am open to learning new technologies.",
+    "My field is infinite, so i am always growing in it.",
+    "I am always seeking growth and new experiences."
 ]

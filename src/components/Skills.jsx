@@ -7,7 +7,7 @@ function Skills(props) {
 	if (isLoading) return "Loading";
 	if (error) return "Error";
 	return (
-		<div className="mb-10 flex flex-col items-center">
+		<div className="mb-10 flex flex-col items-center" id="skills">
 			<h2 className="font-semibold text-[3rem] align-baseline w-full">
 				Skills
 			</h2>

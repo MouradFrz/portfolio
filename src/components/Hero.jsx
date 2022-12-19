@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 function Hero(props) {
 	return (
-		<div className="mb-40  flex gap-5 flex-col lg:flex-row-reverse lg:mt-40">
+		<div id="home" className="mb-40  flex gap-5 flex-col lg:flex-row-reverse lg:mt-40">
 			<div className="flex items-center  lg:w-[50%]">
 				<div className="w-[100%] text-[0.7rem]  my-2 lg:my-0">
 					<motion.pre

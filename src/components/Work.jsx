@@ -22,7 +22,7 @@ function Work(props) {
 	if (isLoading) return "loading";
 	if (error) return "something went wrong";
 	return (
-		<div className="mb-10 flex flex-col items-center">
+		<div className="mb-10 flex flex-col items-center" id="work">
 			<h2 className="font-semibold text-[3rem] align-baseline w-full">
 				Projects
 			</h2>

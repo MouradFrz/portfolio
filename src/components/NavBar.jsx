@@ -16,28 +16,33 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 
 			<ul className="md:flex hidden gap-10 justify-end">
 				<li className="hover:text-secondary" >
-					<NavLink to="#contact">
+					<a href="#home">
 						{" "}
 						<span className="sec-font">H</span>ome
-					</NavLink>
+					</a>
 				</li>
 				<li className="hover:text-secondary">
-					<NavLink to="#contact">
+					<a href="#work">
 						<span className="sec-font">W</span>ork
-					</NavLink>
+					</a>
 				</li>
 				<li className="hover:text-secondary">
-					<NavLink to="#contact">
+					<a href="#skills">
+						<span className="sec-font">S</span>kills
+					</a>
+				</li>
+				<li className="hover:text-secondary">
+					<a href="#about-me">
 						<span className="sec-font">A</span>bout me
-					</NavLink>
+					</a>
 				</li>
 				<li className="hover:text-secondary">
-					<NavLink to="#contact">
+					<a href="#contact">
 						<span className="sec-font">C</span>ontact
-					</NavLink>
+					</a>
 				</li>
 				<li>
-					<a href="" className="outline-button">
+					<a href="https://docs.google.com/document/d/1wXq5UI7RljpJ1a99ORfmOhOB_lbyPDvxGhNdZl-LJug/edit?usp=sharing" className="outline-button">
 						Resume
 					</a>
 				</li>
