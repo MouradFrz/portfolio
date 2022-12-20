@@ -5,7 +5,7 @@ function randomQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];
 }
 function AboutMe(props) {
-	const [showMessage, setShowMessage] = useState(false);
+	const [showMessage, setShowMessage] = useState(true);
 	const [message, setMessage] = useState(randomQuote);
 	useEffect(() => {
 		const inter = setInterval(() => {
@@ -32,9 +32,9 @@ function AboutMe(props) {
 								animate={{
 									clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
 								}}
-								exit={{ opacity: 0 }}
+								exit={{ scaleX: 0 ,opacity:0 }}
 								transition={{ duration: 1 }}
-								className="text-center w-full sec-font text-2xl px-5"
+								className="text-center w-full sec-font text-2xl px-5 origin-left " 
 							>
 								{message}
 							</motion.p>
