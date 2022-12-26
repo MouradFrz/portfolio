@@ -69,7 +69,7 @@ function Hero(props) {
 					<span className="text-secondary">
 						Full Stack Web Developement
 					</span>. <br />
-					and I am the person who person who will bring your website idea to
+					and I am the person who will bring your website idea to
 					life!
 				</p>
 				<a href="" className="outline-button mt-5 w-fit block">
