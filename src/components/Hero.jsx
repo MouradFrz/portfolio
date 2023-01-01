@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 function Hero(props) {
+	const [animateName,setAnimateName] = useState(true)
+	useEffect(()=>{
+		const intr = setInterval(()=>{
+			setAnimateName(prev=>!prev)
+		},5000)
+		return ()=>{clearInterval(intr)}
+	},[])
 	return (
 		<div id="home" className="mb-40  flex gap-5 flex-col lg:flex-row-reverse lg:mt-40">
 			<div className="flex items-center  lg:w-[50%]">
@@ -57,7 +64,7 @@ function Hero(props) {
 			</div>
 			<div className="lg:w-[50%] mt-30 md:mt-0">
 				<p className="sec-font text-sm text-secondary mb-2">Hi, I am</p>
-				<h2 className="text-[5.2rem] leading-[80px] font-bold tracking-wide">
+				<h2 className={`text-[5.2rem] leading-[80px] font-bold tracking-wide ${animateName && "glitch"}`} data-text="Mourad Yaou.">
 					Mourad Yaou.
 				</h2>
 				<p className="mt-3 leading-5">

@@ -35,7 +35,7 @@ function Skills(props) {
 				viewport={{ once: true }}
 				initial="hidden"
 				whileInView="show"
-				className="flex gap-4 flex-wrap w-[70%]  md:w-[60%] md:max-w-[500px] justify-center "
+				className="flex gap-4 flex-wrap w-[70%] md:w-[60%] md:max-w-[500px] justify-center "
 			>
 				{data.map((el, i) => {
 					return (
