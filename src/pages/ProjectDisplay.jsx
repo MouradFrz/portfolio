@@ -6,6 +6,7 @@ import { useFetch } from "../hooks/useFetch";
 import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineGithub } from "react-icons/ai";
 import { ScrollRestoration } from "react-router-dom";
+import {motion} from "framer-motion"
 
 import parse from "html-react-parser";
 

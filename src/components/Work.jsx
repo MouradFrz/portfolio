@@ -10,8 +10,7 @@ function Work(props) {
 		show: {
 			opacity: 1,
 			transition: {
-				// delayChildren: 4,
-				staggerChildren: 0.5,
+				staggerChildren: 0.2,
 			},
 		},
 	};
@@ -30,8 +29,10 @@ function Work(props) {
 			<motion.div
 				className="flex gap-4 flex-wrap justify-center transition-all"
 				variants={container}
+				key={showedProjects}
+				viewport={{ once: true }}
 				initial="hidden"
-				animate="show"
+				whileInView="show"
 			>
 				{data.slice(0, showedProjects).map((el, i) => (
 					<Card

@@ -3,10 +3,15 @@ import { Outlet } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import LeftSideBar from "../components/LeftSideBar";
 import SidebarMobile from "../components/SidebarMobile";
+import {motion} from "framer-motion"
 function Layout(props) {
     const [sidebarOn, setSideBarOn] = useState(false)
 	return (
-		<div className="bg-primary text-white">
+		<motion.div
+		initial={{ opacity: 0 }}
+		animate={{ opacity: 1 }}
+		exit={{ opacity: 0 }}
+		transition={{ duration:2 }} className="bg-primary text-white">
             <SidebarMobile sidebarOn={sidebarOn} setSideBarOn={setSideBarOn}/>
 			<div className="bg-primary z-10 relative">
 				<NavBar sidebarOn={sidebarOn} setSideBarOn={setSideBarOn}/>
@@ -20,7 +25,7 @@ function Layout(props) {
 					Designed and Developed by <a href="" className="font-bold text-secondary">Mourad Yaou</a>
 				</footer>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

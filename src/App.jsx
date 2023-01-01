@@ -5,7 +5,6 @@ import AppLoading from "./components/AppLoading";
 import { motion, AnimatePresence } from "framer-motion";
 function App() {
 	const nav = useLocation();
-	console.log()
 	const [showContent, setShowContent] = useState(()=>nav.pathname!=='/');
 	const myRoutes = useRoutes(routes);
 	useEffect(() => {

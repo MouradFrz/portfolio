@@ -23,7 +23,11 @@ function AboutMe(props) {
 		<div className="mb-10" id="about-me">
 			<h2 className="font-semibold text-[3rem]">About me</h2>
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
-			<div className="flex flex-col md:flex-row">
+			<div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				className="flex flex-col md:flex-row"
+			>
 				<div className="flex items-center md:w-[48%] w-full mb-10 md:mb-0 min-h-[100px]">
 					<AnimatePresence>
 						{showMessage && (
@@ -32,16 +36,22 @@ function AboutMe(props) {
 								animate={{
 									clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
 								}}
-								exit={{ opacity:0 }}
+								exit={{ opacity: 0 }}
 								transition={{ duration: 1 }}
-								className="text-center w-full sec-font text-2xl px-5 origin-left " 
+								className="text-center w-full sec-font text-2xl px-5 origin-left "
 							>
 								{message}
 							</motion.p>
 						)}
 					</AnimatePresence>
 				</div>
-				<div className="md:w-[50%] w-full leading-8">
+				<motion.div
+					initial={{ opacity: 0,y:20 }}
+					whileInView={{ opacity: 1,y:0 }}
+					viewport={{ once: true }}
+					transition={{ duration:0.7 }}
+					className="md:w-[50%] w-full leading-8"
+				>
 					I am a 21 years old{" "}
 					<span className="text-secondary">Software Engineer</span>, I got my
 					Bachelor degree in June 2022, Got introduced to web developement and
@@ -58,7 +68,7 @@ function AboutMe(props) {
 						complete, effecient and competent
 					</span>{" "}
 					Full Stack Web Developer.
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
