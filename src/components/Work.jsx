@@ -4,7 +4,7 @@ import { useFetch } from "../hooks/useFetch";
 import Card from "../components/Card";
 import { motion } from "framer-motion";
 function Work(props) {
-	const [showedProjects, setShowedProject] = useState(5);
+	const [showedProjects, setShowedProject] = useState(false);
 	const container = {
 		hidden: { opacity: 0 },
 		show: {
@@ -18,6 +18,12 @@ function Work(props) {
 	const { data, isLoading, error } = useFetch(
 		'*[_type=="project"]{_id,title,body,shortened,technologies}'
 	);
+	let dataFirstSlice;
+	let dataRest;
+	if (data) {
+		dataFirstSlice = data.slice(0, 5);
+		dataRest = data.slice(5, data.length);
+	}
 	if (isLoading) return "loading";
 	if (error) return "something went wrong";
 	return (
@@ -27,27 +33,50 @@ function Work(props) {
 			</h2>
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
 			<motion.div
-				className="flex gap-4 flex-wrap justify-center transition-all"
+				className="flex gap-4 flex-wrap justify-center transition-all mb-4"
 				variants={container}
-				key={showedProjects}
 				viewport={{ once: true }}
 				initial="hidden"
 				whileInView="show"
 			>
-				{data.slice(0, showedProjects).map((el, i) => (
-					<Card
-						key={i}
-						title={el.title}
-						mainTech={el.technologies ? el.technologies[0] : ""}
-						description={el.shortened ? el.shortened[0].children[0].text : ""}
-						id={el._id}
-					/>
-				))}
+				{dataFirstSlice &&
+					dataFirstSlice.map((el, i) => (
+						<Card
+							key={i}
+							title={el.title}
+							mainTech={el.technologies ? el.technologies[0] : ""}
+							description={el.shortened ? el.shortened[0].children[0].text : ""}
+							id={el._id}
+						/>
+					))}
 			</motion.div>
+			{showedProjects && (
+				<motion.div
+					className="flex gap-4 flex-wrap justify-center transition-all"
+					variants={container}
+					key={showedProjects}
+					viewport={{ once: true }}
+					initial="hidden"
+					whileInView="show"
+				>
+					{dataRest &&
+						dataRest.map((el, i) => (
+							<Card
+								key={i}
+								title={el.title}
+								mainTech={el.technologies ? el.technologies[0] : ""}
+								description={
+									el.shortened ? el.shortened[0].children[0].text : ""
+								}
+								id={el._id}
+							/>
+						))}
+				</motion.div>
+			)}
 			<button
 				className="outline-button text-center mt-8 w-fit"
 				onClick={() => {
-					setShowedProject((prev) => (prev === 5 ? prev.length : 5));
+					setShowedProject((prev) => !prev);
 				}}
 			>
 				See {showedProjects === 5 ? "more" : "less"} projects

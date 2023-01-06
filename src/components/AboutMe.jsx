@@ -25,7 +25,7 @@ function AboutMe(props) {
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
 			<div
 				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
+				whileinview={{ opacity: 1 }}
 				className="flex flex-col md:flex-row"
 			>
 				<div className="flex items-center md:w-[48%] w-full mb-10 md:mb-0 min-h-[100px]">
@@ -46,10 +46,10 @@ function AboutMe(props) {
 					</AnimatePresence>
 				</div>
 				<motion.div
-					initial={{ opacity: 0,y:20 }}
-					whileInView={{ opacity: 1,y:0 }}
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					transition={{ duration:0.7 }}
+					transition={{ duration: 0.7 }}
 					className="md:w-[50%] w-full leading-8"
 				>
 					I am a 21 years old{" "}
