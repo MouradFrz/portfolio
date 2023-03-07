@@ -7,15 +7,15 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 		<div className="bg-primary custom-container relative flex py-8 justify-between">
 			<img src="./logo.svg" className="w-8 ml-4 md:ml-0" alt="logo" />
 
-				<GiHamburgerMenu
-					onClick={() => {
-						setSideBarOn((prev) => !prev);
-					}}
-					className="mr-4 md:mr-0 text-2xl cursor-pointer hover:text-secondary  transition-all duration-75 md:hidden"
-				/>
+			<GiHamburgerMenu
+				onClick={() => {
+					setSideBarOn((prev) => !prev);
+				}}
+				className="mr-4 md:mr-0 text-2xl cursor-pointer hover:text-secondary  transition-all duration-75 md:hidden"
+			/>
 
 			<ul className="md:flex hidden gap-10 justify-end">
-				<li className="hover:text-secondary" >
+				<li className="hover:text-secondary">
 					<a href="#home">
 						{" "}
 						<span className="sec-font">H</span>ome
@@ -42,7 +42,11 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 					</a>
 				</li>
 				<li>
-					<a href="https://docs.google.com/document/d/1wXq5UI7RljpJ1a99ORfmOhOB_lbyPDvxGhNdZl-LJug/edit?usp=sharing" className="outline-button">
+					<a
+						href="https://docs.google.com/document/d/1wXq5UI7RljpJ1a99ORfmOhOB_lbyPDvxGhNdZl-LJug/edit?usp=sharing"
+						target={"_blank"}
+						className="outline-button"
+					>
 						Resume
 					</a>
 				</li>

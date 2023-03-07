@@ -79,7 +79,7 @@ function Hero(props) {
 					and I am the person who will bring your website idea to
 					life!
 				</p>
-				<a href="" className="outline-button mt-5 w-fit block">
+				<a href="#contact" className="outline-button mt-5 w-fit block">
 					Build my project!
 				</a>
 			</div>
