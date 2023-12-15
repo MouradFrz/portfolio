@@ -79,7 +79,7 @@ function Work(props) {
 					setShowedProject((prev) => !prev);
 				}}
 			>
-				See {!showedProjects ? "more" : "less"} projects
+				Voir {!showedProjects ? "plus" : "moins"} de projets
 			</button>
 		</div>
 	);

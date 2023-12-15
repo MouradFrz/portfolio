@@ -21,7 +21,7 @@ function AboutMe(props) {
 	}, []);
 	return (
 		<div className="mb-10" id="about-me">
-			<h2 className="font-semibold text-[3rem]">About me</h2>
+			<h2 className="font-semibold text-[3rem]">A propos de moi</h2>
 			<span className="w-full h-[2px] rounded-2xl bg-secondary block mb-10"></span>
 			<div
 				initial={{ opacity: 0 }}
@@ -45,6 +45,7 @@ function AboutMe(props) {
 						)}
 					</AnimatePresence>
 				</div>
+
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -52,22 +53,22 @@ function AboutMe(props) {
 					transition={{ duration: 0.7 }}
 					className="md:w-[50%] w-full leading-8"
 				>
-					I am a 21 years old{" "}
-					<span className="text-secondary">Software Engineer</span>, I got my
-					Bachelor degree in June 2022, Got introduced to web developement and
-					became very passionate about it.
-					<br />
-					I have been building websites for two years, my journey started when I
-					got introduced to web developement in university. <br />I kept making
-					enough efforts at university to prosper in software developement in
-					general, and I decided to specialize in web developement so I explored
-					the field even more on the internet, So I chose a stack{" "}
-					<span className="text-secondary">(PHP-Laravel-React-MySQL)</span> and
-					learned it in a project oriented manner, aiming towards being a{" "}
+					Je suis un <span className="text-secondary">ingénieur logiciel</span>{" "}
+					de 21 ans, ayant obtenu mon diplôme de licence en juin 2022. J'ai
+					découvert le développement web à l'université et suis rapidement
+					devenu passionné par ce domaine. Pendant deux ans, j'ai travaillé sur
+					la création de sites web. Mon parcours a débuté lorsque j'ai été
+					initié au développement web à l'université. J'ai déployé suffisamment
+					d'efforts pour exceller dans le développement logiciel en général,
+					puis j'ai décidé de me spécialiser dans le développement web. J'ai
+					exploré davantage ce domaine sur Internet, choisi une pile
+					technologique{" "}
+					<span className="text-secondary">(PHP-Laravel-React-MySQL)</span> et
+					appris de manière orientée projet, dans le but de devenir un
+					développeur web Full Stack{" "}
 					<span className="text-secondary">
-						complete, effecient and competent
-					</span>{" "}
-					Full Stack Web Developer.
+						complet, efficace et compétent.
+					</span>
 				</motion.div>
 			</div>
 		</div>

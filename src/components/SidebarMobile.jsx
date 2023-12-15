@@ -17,43 +17,90 @@ function SidebarMobile({ sidebarOn, setSideBarOn }) {
 					<div className="bg-accent w-3/4 h-full absolute right-0">
 						<ul className="mt-24">
 							<li>
-								<a href="#home" className="block p-4 text-center text-2xl" onClick={()=>{setSideBarOn(false)}}>
-									<span className="sec-font">H</span>ome
+								<a
+									href="#home"
+									className="block p-4 text-center text-2xl"
+									onClick={() => {
+										setSideBarOn(false);
+									}}
+								>
+									<span className="sec-font">A</span>cceuil
 								</a>
 							</li>
 							<li>
-								<a href="#work" className="block p-4 text-center text-2xl" onClick={()=>{setSideBarOn(false)}}>
-									<span className="sec-font">W</span>ork
+								<a
+									href="#work"
+									className="block p-4 text-center text-2xl"
+									onClick={() => {
+										setSideBarOn(false);
+									}}
+								>
+									<span className="sec-font">P</span>rojets
 								</a>
 							</li>
 							<li>
-								<a href="#skills" className="block p-4 text-center text-2xl" onClick={()=>{setSideBarOn(false)}}>
-									<span className="sec-font">S</span>kills
+								<a
+									href="#skills"
+									className="block p-4 text-center text-2xl"
+									onClick={() => {
+										setSideBarOn(false);
+									}}
+								>
+									<span className="sec-font">C</span>ompetances
 								</a>
 							</li>
 							<li>
-								<a href="#about-me" className="block p-4 text-center text-2xl" onClick={()=>{setSideBarOn(false)}}>
-									<span className="sec-font">A</span>bout me
+								<a
+									href="#about-me"
+									className="block p-4 text-center text-2xl"
+									onClick={() => {
+										setSideBarOn(false);
+									}}
+								>
+									<span className="sec-font">A</span> propos de moi
 								</a>
 							</li>
 							<li>
-								<a href="#contact" className="block p-4 text-center text-2xl" onClick={()=>{setSideBarOn(false)}}>
-									<span className="sec-font">C</span>ontacts
+								<a
+									href="#contact"
+									className="block p-4 text-center text-2xl"
+									onClick={() => {
+										setSideBarOn(false);
+									}}
+								>
+									<span className="sec-font">C</span>ontact
 								</a>
 							</li>
-							<li className="mt-5 text-center"><a href="https://docs.google.com/document/d/1wXq5UI7RljpJ1a99ORfmOhOB_lbyPDvxGhNdZl-LJug/edit?usp=sharing" className="outline-button" onClick={()=>{setSideBarOn(false)}}>Resume</a></li>
+							<li className="mt-5 text-center">
+								<a
+									href="https://docs.google.com/document/d/1wXq5UI7RljpJ1a99ORfmOhOB_lbyPDvxGhNdZl-LJug/edit?usp=sharing"
+									className="outline-button"
+									onClick={() => {
+										setSideBarOn(false);
+									}}
+								>
+									Resumé
+								</a>
+							</li>
 							<li className=" h-[60px] mt-28">
 								<div className="relative w-full h-full flex justify-center items-center">
-									<a href="https://www.linkedin.com/in/mourad-yaou/" target="_blank" className="">
+									<a
+										href="https://www.linkedin.com/in/mourad-yaou/"
+										target="_blank"
+										className=""
+									>
 										<AiOutlineLinkedin className="p-2 text-[3rem] relative bg-accent z-10  hover:text-secondary transition-all" />
 									</a>
-									<a href="https://github.com/MouradFrz" target="_blank" className="">
+									<a
+										href="https://github.com/MouradFrz"
+										target="_blank"
+										className=""
+									>
 										<FiGithub className="p-2 text-[3rem] relative bg-accent z-10  hover:text-secondary transition-all" />
 									</a>
 									<span className="w-full absolute top-[50%] h-[1px] bg-secondary"></span>
 								</div>
 							</li>
-							
 						</ul>
 					</div>
 					<CgClose

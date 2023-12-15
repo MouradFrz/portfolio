@@ -1,10 +1,10 @@
 import React from "react";
 import { BsFillEyeFill } from "react-icons/bs";
 import parse from "html-react-parser";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-function Card({title,description,id,mainTech}) {
+function Card({ title, description, id, mainTech }) {
 	const item = {
 		hidden: { opacity: 0 },
 		show: { opacity: 1 },
@@ -16,9 +16,15 @@ function Card({title,description,id,mainTech}) {
 		>
 			<h2 className="text-[2rem] font-bold">{title}</h2>
 			{description && <p>{parse(description)}</p>}
-			<p>Main technology: <span className="font-semibold text-secondary">{mainTech}</span></p>
-			<Link to={`/project/${id}`} className="border-b-2 mt-auto  w-fit flex transition-all hover:border-secondary duration-75 justify-center items-center gap-2 font-semibold p-2">
-				<BsFillEyeFill className="text-secondary" /> View more
+			<p>
+				Technologie principale:{" "}
+				<span className="font-semibold text-secondary">{mainTech}</span>
+			</p>
+			<Link
+				to={`/project/${id}`}
+				className="border-b-2 mt-auto  w-fit flex transition-all hover:border-secondary duration-75 justify-center items-center gap-2 font-semibold p-2"
+			>
+				<BsFillEyeFill className="text-secondary" /> Voir plus
 			</Link>
 		</motion.div>
 	);

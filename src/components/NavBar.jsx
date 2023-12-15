@@ -18,22 +18,22 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 				<li className="hover:text-secondary">
 					<a href="#home">
 						{" "}
-						<span className="sec-font">H</span>ome
+						<span className="sec-font">A</span>cceuil
 					</a>
 				</li>
 				<li className="hover:text-secondary">
 					<a href="#work">
-						<span className="sec-font">W</span>ork
+						<span className="sec-font">P</span>rojets
 					</a>
 				</li>
 				<li className="hover:text-secondary">
 					<a href="#skills">
-						<span className="sec-font">S</span>kills
+						<span className="sec-font">C</span>ompetances
 					</a>
 				</li>
 				<li className="hover:text-secondary">
 					<a href="#about-me">
-						<span className="sec-font">A</span>bout me
+						<span className="sec-font">A</span> propos de moi
 					</a>
 				</li>
 				<li className="hover:text-secondary">
@@ -47,7 +47,7 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 						target={"_blank"}
 						className="outline-button"
 					>
-						Resume
+						Resumé
 					</a>
 				</li>
 			</ul>
