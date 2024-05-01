@@ -43,7 +43,7 @@ function NavBar({ sidebarOn, setSideBarOn }) {
 				</li>
 				<li>
 					<a
-						href="https://docs.google.com/document/d/1wXq5UI7RljpJ1a99ORfmOhOB_lbyPDvxGhNdZl-LJug/edit?usp=sharing"
+						href="https://docs.google.com/document/d/1760MtwBWdkPLPquLTttpfn8M0W7rHDy7wdWwMQ-6JdY/edit"
 						target={"_blank"}
 						className="outline-button"
 					>
